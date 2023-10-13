@@ -1,0 +1,64 @@
+[versions]
+kotlin = "1.9.10"
+dokkatoo = "2.0.0"
+minecraft = "1.20.1"
+paper = "1.20.1-R0.1-SNAPSHOT"
+paperweight = "1.5.6"
+run-task = "2.2.0"
+shadow = "8.1.1"
+serialization = "1.6.0"
+coroutines = "1.7.3"
+plugin-yml = "0.6.0"
+velocity-api = "3.2.0-SNAPSHOT"
+brigadier = "1.0.18"
+adventure = "4.14.0"
+packetevents = "2.0.2"
+mockk = "1.13.8"
+kotest = "5.7.2"
+ktor = "2.3.5"
+datetime = "0.4.1"
+compose = "1.5.2"
+
+[libraries]
+paper-dev-bundle = { module = "io.papermc.paper:dev-bundle", version.ref = "paper" }
+kotlin-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "serialization" }
+kotlin-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlin-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime-jvm", version.ref = "datetime" }
+velocity-api = { module = "com.velocitypowered:velocity-api", version.ref = "velocity-api" }
+brigadier = { module = "com.mojang:brigadier", version.ref = "brigadier" }
+adventure-api = { module = "net.kyori:adventure-api", version.ref = "adventure" }
+adventure-text-serializer-plain = { module = "net.kyori:adventure-text-serializer-plain", version.ref = "adventure" }
+plugin-kotlin-jvm = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+plugin-kotlin-serialization = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+plugin-shadow = { module = "com.github.johnrengelman:shadow", version.ref = "shadow" }
+plugin-plugin-yml = { module = "net.minecrell:plugin-yml", version.ref = "plugin-yml" }
+plugin-dokkatoo = { module = "dev.adamko.dokkatoo:dokkatoo-plugin", version.ref = "dokkatoo" }
+plugin-paperweight-userdev = { module = "io.papermc.paperweight:paperweight-userdev", version.ref = "paperweight" }
+plugin-run-task = { module = "xyz.jpenilla:run-task", version.ref = "run-task" }
+packetevents-api = { module = "com.github.retrooper.packetevents:api", version.ref = "packetevents" }
+packetevents-spigot = { module = "com.github.retrooper.packetevents:spigot", version.ref = "packetevents" }
+packetevents-velocity = { module = "com.github.retrooper.packetevents:velocity", version.ref = "packetevents" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
+ktor-io = { module = "io.ktor:ktor-io", version.ref = "ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+jetpack-compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+paperweight-userdev = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
+run-paper = { id = "xyz.jpenilla.run-paper", version.ref = "run-task" }
+run-velocity = { id = "xyz.jpenilla.run-velocity", version.ref = "run-task" }
+dokkatoo-html = { id = "dev.adamko.dokkatoo-html", version.ref = "dokkatoo" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+plugin-yml = { id = "net.minecrell.plugin-yml.paper", version.ref = "plugin-yml" }
+
+[bundles]
+ktor-client = ["ktor-client-core", "ktor-client-cio", "ktor-client-content-negotiation", "ktor-serialization-kotlinx-json"]
